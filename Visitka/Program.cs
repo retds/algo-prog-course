@@ -37,3 +37,18 @@ double kelvin = celsius + KelvinOffset;
 
 // Вывод результата
 Console.WriteLine($"{celsius}°C = {fahrenheit}°F = {kelvin}K");
+
+// === Задание 3:
+Console.WriteLine("\n=== Подсчёт занятий ===");
+
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+
+// 1. Количество полных занятий (целочисленное деление)
+int fullLessons = totalMinutes / minutesPerLesson;
+
+// 2. Остаток минут от последнего неполного занятия (оператор %)
+int remainingMinutes = totalMinutes % minutesPerLesson;
+
+// 3. Вывод результата в требуемом формате
+Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + {remainingMinutes} минут");
